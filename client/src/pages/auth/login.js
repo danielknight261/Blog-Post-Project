@@ -1,15 +1,17 @@
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import {auth} from "../../../utils/firebase"
+import { auth } from "../../../utils/firebase";
 
 const login = () => {
-  //Sign in with google auth
+  // Sign in with google auth
   const googleProvider = new GoogleAuthProvider();
   const GoogleLogin = async () => {
     try {
-      const result = await signInWithPopup(auth);
-    } catch (error) {}
+      const result = await signInWithPopup(auth, googleProvider);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -17,7 +19,10 @@ const login = () => {
       <h2 className="text-2xl font-medium">Join Today</h2>
       <div className="py-4">
         <h3 className="py-4">Sign in in with one of the providers</h3>
-        <button className="text-white bg-gray-700 w-full font-medium rounded-lg flex align-middle p-4 gap-2">
+        <button
+          onClick={GoogleLogin}
+          className="text-white bg-gray-700 w-full font-medium rounded-lg flex align-middle p-4 gap-2"
+        >
           <FcGoogle className="text-2xl" />
           Sign in with Google
         </button>
