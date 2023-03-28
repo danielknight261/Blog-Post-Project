@@ -1,6 +1,11 @@
-Notes: Front End 
+Front End / Client Side
 
-Next Js , Tail Wind
+Stack:
+Next, Tailwind, Firebase (So Far....)
+
+
+Issues:
+.env.local - Not currently working, temporary removal of keys until complettion of project from env file into the firebase.js file. For some reason it wont accept the ENV. Fix appears to be simple enough but want to move on with main project build
 
 
 
