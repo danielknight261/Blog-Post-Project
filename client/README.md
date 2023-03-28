@@ -5,8 +5,8 @@ Next, Tailwind, Firebase (So Far....)
 
 
 Issues:
-.env.local - Not currently working, temporary removal of keys until complettion of project from env file into the firebase.js file. For some reason it wont accept the ENV. Fix appears to be simple enough but want to move on with main project build
-
+1. .env.local - Not currently working, temporary removal of keys until complettion of project from env file into the firebase.js file. For some reason it wont accept the ENV. Fix appears to be simple enough but want to move on with main project build
+2. Version issue with nav.js file fixed with legacyBehavior prop, not sure this is a long term solution
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

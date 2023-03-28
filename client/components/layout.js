@@ -1,17 +1,12 @@
-import React from "react";
 import Nav from "./Nav";
 
-const Layout = ({ children }) => {
+// Layout component to wrap the app with common layout elements
+export default function Layout({ children }) {
   return (
-    // The div below contains the entire layout of the page
-    //<div className="mx-6 md:max-w-2xl md:max-auto font-poppins bg-red-700">
-    <div className="mx-10">
-      {/* The Nav component renders the navigation bar */}
-      <Nav />
-      {/* The main content of the page is rendered inside this main element */}
-      <main>{children}</main>
+    // Apply margin and font family to the entire layout
+    <div className="mx-6 md:max-w-2xl md:mx-auto font-poppins">
+      <Nav /> // Include the navigation bar component
+      <main>{children}</main> // Render the main content passed as props
     </div>
   );
-};
-
-export default Layout;
+}

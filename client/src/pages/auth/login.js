@@ -6,21 +6,22 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 
-const login = () => {
+export default function Login() {
   const route = useRouter();
   const [user, loading] = useAuthState(auth);
 
-  // Sign in with google auth
+  // Sign in with Google authentication
   const googleProvider = new GoogleAuthProvider();
   const GoogleLogin = async () => {
     try {
       const result = await signInWithPopup(auth, googleProvider);
-      route.push("/");
+      route.push("/"); // Redirect to home page after successful login
     } catch (error) {
       console.log(error);
     }
   };
 
+  // Redirect to home page if user is already logged in
   useEffect(() => {
     if (user) {
       route.push("/");
@@ -33,7 +34,7 @@ const login = () => {
     <div className="shadow-xl mx-10 mt-32 p-10 text-gray-700">
       <h2 className="text-2xl font-medium">Join Today</h2>
       <div className="py-4">
-        <h3 className="py-4">Sign in in with one of the providers</h3>
+        <h3 className="py-4">Sign in with one of the providers</h3>
         <button
           onClick={GoogleLogin}
           className="text-white bg-gray-700 w-full font-medium rounded-lg flex align-middle p-4 gap-2"
@@ -45,5 +46,3 @@ const login = () => {
     </div>
   );
 };
-
-export default login;
