@@ -31,8 +31,9 @@ export default function Home() {
       </Head>
       <div className="my-12 text-lg font-medium">
         <h2 className="2-xl">See what everyone else if posting</h2>
-        <Message />
-        <Message />
+        {allPosts.map((post) => (
+          <Message {...post}></Message>
+        ))}
       </div>
     </div>
   );
