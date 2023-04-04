@@ -1,4 +1,8 @@
-Front End / Client Side
+Vercel Live Application: https://blog-post-project-c2pjjp66p-danielknight261.vercel.app/
+
+Alternatively: open repo in code editior Step 1: cd client , Step 1: npm run dev , Step 3: application will open in http://localhost:3000/
+
+In order to post/edit and view comments you will need to Join Now and authorise your self as a user 
 
 Stack:
 Next, Tailwind, Firebase (So Far....)
