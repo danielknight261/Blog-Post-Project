@@ -58,6 +58,9 @@ export default function Post() { //defining the Post component
         username: user.displayName,
       });
       setPost({description: ""}); //reset the post state
+      toast.success('Post has been made !', {position: toast.POSITION.TOP_CENTER,
+      autoClose:1500,
+    })
       return route.push('/') //navigate to the homepage
     }
   };
