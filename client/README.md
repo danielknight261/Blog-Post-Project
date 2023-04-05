@@ -1,16 +1,14 @@
-Vercel Live Application: https://blog-post-project-c2pjjp66p-danielknight261.vercel.app/
+You can access the Vercel live application for this project at https://blog-post-project-c2pjjp66p-danielknight261.vercel.app/. Alternatively, you can open the repository in a code editor, navigate to the "client" folder, and run "npm run dev" to launch the application at http://localhost:3000/.
 
-Alternatively: open repo in code editior Step 1: cd client , Step 1: npm run dev , Step 3: application will open in http://localhost:3000/
+To post, edit, and view comments, you will need to click "Join Now" and complete the authentication process.
 
-In order to post/edit and view comments you will need to Join Now and authorise your self as a user 
+This was an enjoyable full-stack project that used a variety of frequently-used technologies, as well as some new tools such as Toast and Firebase, including its database and authentication tools. I found Firebase to be perhaps the simplest and most seamless to use, with easy installation. Interestingly, of all the major technology companies, Google's Firebase is one of the least known to me. Food for thought!
 
-Stack:
-Next, Tailwind, Firebase (So Far....)
-
+The stack used for this project includes Next.js, Tailwind CSS, Firebase database, Firebase authentication, and Toastify.
 
 Issues:
-1. .env.local - Not currently working, temporary removal of keys until complettion of project from env file into the firebase.js file. For some reason it wont accept the ENV. Fix appears to be simple enough but want to move on with main project build
-2. Version issue with nav.js file fixed with legacyBehavior prop, not sure this is a long term solution
+1. .env.local - Not currently working, temporary removal of keys from env file into the firebase.js file. For some reason it wont accept the ENV. Fix appears to be simple enough but want to move on with main project build
+2. Version issue with nav.js file fixed with legacyBehavior prop.
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
